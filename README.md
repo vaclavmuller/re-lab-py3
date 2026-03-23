@@ -1,5 +1,7 @@
 # re-lab (oletoy + colupatr) – Python 3 port (Windows)
 
+> Python 3 + GTK3 port of the original re-lab tools, focused on restoring functionality on modern Windows systems.
+
 This repository contains a Python 3 port of the original re-lab project:
 - oletoy
 - colupatr
@@ -8,6 +10,8 @@ This repository contains a Python 3 port of the original re-lab project:
 
 Original project:
 https://github.com/renyxa/re-lab
+
+This repository is an **unofficial continuation / port** of the original project.
 
 This port was created to make the tools usable again on modern systems:
 - Python 3.14
