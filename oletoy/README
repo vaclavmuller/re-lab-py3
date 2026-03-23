@@ -1,0 +1,65 @@
+OLE Toy is a set of Python scripts to parse and view contents of various 
+binary file formats. Originally OLE Toy was developed for 
+reverse-engineering of Microsoft Publisher file format, but later support 
+for more of them was added, partially written from scratch, partially 
+moved from our earlier work.
+
+As of now OLE Toy reads and parses:
+
+- PUB (Microsoft Publisher ver 98/2k and 2002 to 2010)
+- VSD, VSS (Microsoft Visio, ver 1-11)
+- DOC (Microsoft Word)
+- XLS (Microsoft Excel)
+- PPT (Microsoft PowerPoint)
+- MDB (Microsoft Access)
+- VBA (Microsoft Office)
+- RTF (Microsoft Office)
+- CLP (Microsoft clipboard)
+- FH (Macromedia Freehand ver.7 to 11)
+- QPW (QuattroPro spreadsheets)
+- SVM (StarOffice)
+- PPP (old PagePlus files, BIPU support)
+- CDR (CorelDRAW ver. 3 to 16)
+- WLD (CorelDRAW ver. 1 and 2)
+- CMX (CorelDRAW)
+- CPL (CorelDRAW palette)
+- CDW ("Kompas" unknown version, files were picked on Inet)
+- ABR/GRD (Adobe brushes and gradients)
+- ICC (colour profiles)
+- EMF, EMF+, WMF (Microsoft)
+- REX, RX2 (Propellerheads ReCycle)
+- XML
+- CDX (CambridgeSoft ChemDraw, BIPU support)
+- LRF (Sony BroadBand EBook, also known as BBeB)
+- PDB (various Palm-based e-book formats, currently eReader, Plucker,
+       PalmDoc, TealDoc, zTXT, iSilo ver. 1 to 3 and TomeRaider3. iSilo
+       and TomeRaider3 only shows basic structure, because the format is
+       not known.)
+- WPD (Software602 602Text; this format has nothing in common with
+       WordPerfect.)
+- IMP (SoftBook e-book)
+- ZMF (Zoner Callisto, also known as Zoner Draw)
+- ZBR (Zoner Zebra)
+- BMI (Zoner Bitmap)
+- IWA (Apple iWork '13. This format is used by Keynote 6, Pages 5 and
+       Numbers 3, with a big chunk of the internals shared among all
+       three applications. Support for Numbers is BIPU.)
+- WLS (Software602 602Tab, aka MagicTab)
+- TC6, GC6 (Software602 C602)
+- PLIST (Apple property list)
+- 602 (Software602 T602)
+
+Dependencies:
+- PyGTK (sudo apt-get install python-gtk2 for Ubuntu).
+- libgsf for OLE-based formats. You can find libgsf source code here:
+    http://ftp.gnome.org/pub/GNOME/sources/libgsf/
+    (or sudo apt-get install libgsf-bin libgsf-1-dev for Ubuntu).
+
+To start OLE Toy just run:
+
+$ ./view.py
+
+All commercial software mentioned in this file and elsewhere in source code are 
+trademarks of respective vendors. Re-lab team is not affiliated to those vendors 
+in any way. All work on support for those file formats is a result of 
+clean-room reverse-engineering. No DLL and EXE files have been looked at.

@@ -1,0 +1,79 @@
+2012-03-02  Valek Filippov <frob@df.ru>
+
+	* Fix comment remove/insert, fix off by 1 for files with %16 length.
+
+2012-02-04  Valek Filippov <frob@df.ru>
+
+	* Improvements for 'goto'.
+	* Search for selection.
+	* Add "!" for "insert/remove comment".
+	* Add "/" for "insert separator".
+	* Fix 'copy to clipboard'
+	* Switch focus by ^Space.
+
+2012-01-27  Valek Filippov <frob@df.ru>
+
+	* Fixed 'goto'
+	* Added search.
+	* Added options.
+
+2012-01-23  Valek Filippov <frob@df.ru>
+
+	* Added support for 'Tab'
+	* +Alt in entry to send keys to hexview.
+
+2012-01-22  Valek Filippov <frob@df.ru>
+
+	* Comments improvements
+	* Fix status page problem
+
+2012-01-20  Valek Filippov <frob@df.ru>
+
+	* Comments fixes and improvements
+	* Fix open/save.
+
+2012-01-16  Valek Filippov <frob@df.ru>
+
+	* Code reorg for on_key_pressed.
+	* More code reorg, comments/separators temporary partly broken.
+
+2012-01-08  Valek Filippov <frob@df.ru>
+
+	* Fix 'fmt' > maxaddr for not whole file
+	* Implement 'fmt *'.
+
+2012-01-08  Valek Filippov <frob@df.ru>
+
+	* Fix selection outside of dump
+	* Improve column selection
+	* Fix short files issue
+	* Fix selection to left and multiline
+
+2012-01-08  Valek Filippov <frob@df.ru>
+
+	* 'fmt' mostly fixed.
+
+2012-01-04  Valek Filippov <frob@df.ru>
+
+	* Start to implement 'fmt'.
+
+2012-01-03  Valek Filippov <frob@df.ru>
+
+	* Fix 'goto'.
+
+2011-12-23  Valek Filippov <frob@df.ru>
+
+	* Comments landed.
+	* Improved comments/breaks behavior
+
+2011-12-23  Valek Filippov <frob@df.ru>
+
+	* Bold for hex cursor and selection size,
+	  semitransparent selection size BG,
+	  better place for selection size,
+	  small visual glitch with selection fix.
+	* step toward comments
+
+2011-12-22  Valek Filippov <frob@df.ru>
+
+	* "Start making this into a real package." (c) Jody

@@ -1,0 +1,25 @@
+oletoy_py3 (v1) - Python 3 bootstrap
+
+This is a first bootstrap pass for porting oletoy to Python 3 on Windows.
+
+What was done:
+- created oletoy_py3 as a copy of the original oletoy sources
+- added gtk_compat.py reused from the working colupatr Python 3 port
+- converted key bootstrap modules to import the compatibility layer:
+  - App.py
+  - view.py
+  - tree.py
+  - hv2.py
+  - uniview.py
+  - utils.py
+- added compat_helpers.py with optional_import(), so syntax/runtime failures in not-yet-ported parser modules do not stop the shell from importing
+- fixed several Python-3 syntax issues in the core startup path
+
+Important current limitation:
+- this is intentionally a v1 bootstrap package, not a finished full port
+- many format/parser modules are still original Python-2-era code and are loaded lazily as optional modules
+- some file types will therefore still fail to open until their specific parser modules are ported
+
+Current intended goal of this package:
+- serve as a starting point for the oletoy shell/bootstrap port
+- allow iterative fixing of parser modules one group at a time

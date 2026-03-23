@@ -1,0 +1,626 @@
+2012-06-16  Valek Filippov
+
+		* migration to hv
+
+2012-05-23  Valek Filippov
+
+		* "$deflate@" command.
+
+2012-05-12  Valek Filippov
+
+		* XLS: add tooltips for hd tree.
+		* RTF: initial support.
+		* Added emf/wmf to commands.
+
+2012-04-25  Valek Filippov
+
+		* CDR: more saving.
+
+2012-04-25  Valek Filippov
+
+		* CDR: experimental saving.
+
+2012-04-10  Valek Filippov
+
+		* CDR/CMX: clean-up decompression, remove garbage
+
+2012-03-10  Valek Filippov
+
+		* CDR: initial 'loda' for ver5.
+
+2012-03-10  Valek Filippov
+
+		* CDR: parse 'fild' flags.
+
+2012-03-10  Valek Filippov
+
+		* CDR: 'trfd' adjustments.
+		* CDR: 'ttil', 'lnkt'.
+		* CDR: activate fild/outl.
+		* More utils.
+
+2012-03-09  Valek Filippov
+
+		* QPW: minimal support.
+
+2012-03-05  Valek Filippov
+
+		* CDR: 'fild' type 9 for ver 13+.
+
+2012-03-05  Valek Filippov
+
+		* CDR: 'loda' 0x1e for ver 15.
+
+2012-03-02  Valek Filippov
+
+		* CDR: 'loda' 0x2eea
+
+2012-03-01  Valek Filippov
+
+		* CDR: 'bmpf' preview.
+		* CDR: more 'fild' type 7.
+
+2012-02-29  Valek Filippov
+
+		* CDR: fild type 2 for v13.
+
+2012-02-27  Valek Filippov
+
+		* ICC: initial support.
+		* CMX: initial support.
+
+2012-02-26  Valek Filippov
+
+		* CDR: initial support for pics rendering for 'bmp '.
+
+2012-02-22  Valek Filippov
+
+		* CDR: 'outl' more flags.
+
+2012-02-23  Fridrich Strba
+
+		* CDR: 'outl' 'behind fill' flag.
+
+2012-02-22  Valek Filippov
+
+		* CDR: 'fild' gradients, 0x25 coords.
+
+2012-02-20  Valek Filippov
+
+		* Fix search.
+		* CDR: more 'stlt', more 'txsm'.
+		* CDR: 'stlt' and 'txsm' for ver > 12.
+
+2012-02-19  Valek Filippov
+
+		* CDR: more 'stlt'.
+
+2012-02-18  Valek Filippov
+
+		* CDR: experimental 'guid'.
+		* CDR: 'font'.
+		* CDR: more 'txsm'.
+
+2012-02-14  Valek Filippov
+
+		* CDR: more 'bmp '.
+
+2012-02-13  Valek Filippov
+
+		* CDR: more 'stlt'.
+
+2012-02-12  Valek Filippov
+
+		* CDR: initial 'stlt'
+
+2012-02-11  Valek Filippov
+
+		* CDR: write down some 'txsm' findings.
+
+2012-02-10  Valek Filippov
+
+		* DOC: Commit vmiklos patch.
+
+2012-02-08  Valek Filippov
+
+		* CDR: bmpf, bmp, 0x1e for bitmaps.
+
+2012-02-04  Valek Filippov
+
+		* CDR: fix from Fridrich.
+
+2012-02-03  Valek Filippov
+
+		* CDR: impove "DISP" handling
+		* VSD: some clean-up
+
+2012-02-01  Valek Filippov
+
+		* CDR: Added rotation centre in loda (thanks to AP);
+		fixed 0x1e loda for ellipse (thanks Fridrich);
+		fixed and improved 0x2af8 loda for polygon;
+		fixed 0x1e for polygon;
+		0x25 is path?
+
+2012-01-31  Valek Filippov
+
+		* ZIP: support for PKZIP and recursive load.
+		* CDR: initial support for ver 14 and 15.
+
+2012-01-29  Valek Filippov
+
+		* CDW: parse last record.
+
+2012-01-27  Valek Filippov
+
+		* CDR: parse gradients part of 'fild'
+
+2012-01-27  Valek Filippov
+
+		* CDW: Initial support for Kompas.
+
+2012-01-26  Valek Filippov
+
+		* PUB: Improvements in pub98/2k 'Contents' parsing.
+		* PUB: clean-up.
+
+2012-01-25  Valek Filippov
+
+		* PUB: start to parse 'Contents' from pub98/2k files.
+
+2012-01-24  Valek Filippov
+
+		* VSD: cosmetic fix for OLE in stencils.
+
+2012-01-22  Valek Filippov
+
+		* PUB: Some improvements in  representation an parsing of blocks.
+		* VSD: Small improvement in Stylesheet for ver5 parsing
+
+2012-01-15  Valek Filippov
+
+		* Escher: temporary changes to look into file from fdo#43193
+
+2012-01-14  Valek Filippov
+
+		* CPT: ported support from cptre.
+
+2012-01-03  Valek Filippov
+
+		* Fixes for search in PUB.
+		* Attempt to implement 'compare'.
+
+2012-01-02  Valek Filippov
+
+		* Added second HEX highlight (useful for Quill and CDR).
+		* PUB: Quill/FDPC hex highlighting started.
+
+2011-12-19  Valek Filippov
+
+		* Backported 'search list dbl-click' improvement from my other tool.
+
+2011-12-10  Valek Filippov
+
+		* Move some common functions to "utils".
+		* CDR: loda-specific search (?rloda#d007), highligh tooltip if 4 bytes match with dict ID.
+
+2011-12-09  Valek Filippov
+
+		* CDR: improved loda and outl parsing
+
+2011-12-07  Valek Filippov
+
+		* CDR: bbox and obbx, initial parsing
+
+2011-11-30  Valek Filippov
+
+		* CDR: fix layer names, loda coords and DISP
+		* CDR: start to parse 'arrw' and 'outl'
+
+2011-11-29  Valek Filippov
+
+		* DOC: start to parse *Table
+
+2011-11-28  Valek Filippov
+
+		* DOC: parse FcLcb2k*
+
+2011-11-27  Valek Filippov
+
+		* DOC: parse FcLcb97
+
+2011-11-26  Valek Filippov
+
+		* DOC: start to parse FIBs
+
+2011-11-21  Valek Filippov
+
+		* VSD: fix blocks offset for TextFields in ver6
+		* XLS: parse Unicode Lbl names properly ([MS-XLS] is wrong)
+		* XLS: start to parse expressions
+
+2011-11-14  Valek Filippov
+
+		* XLS: start to parse Lbl.
+
+2011-11-11  Valek Filippov
+
+		* XLS: add Ptg definitions for future parsing.
+
+2011-11-05  Valek Filippov
+
+		* Little code clean-up.
+
+2011-11-04  Valek Filippov
+
+		* "$esc" was not in Help->Manual.
+		* VSD: fix the date.
+
+2011-11-03  Valek Filippov
+
+		* VSD: small addition to TextField, change date to date/time.
+
+2011-10-31  Valek Filippov
+
+		* XLS: parse RK (not sure about RkNum for fint = 0), add 'RK' into search list.
+
+2011-10-28  Valek Filippov
+
+		* Add short manual.
+
+2011-10-26  Valek Filippov
+
+		* Add command history (arrow up/down to navigate)
+		* Add row expand/collapse with arrow right/left.
+
+2011-10-25  Valek Filippov
+
+		* VSD: fix ability to save.
+		* XLS: preparation for XLS-specific search.
+		* XLS: search for cell phase 1.
+
+2011-10-23  Valek Filippov
+
+		* MDB: more fields in table_def.
+
+2011-10-20  Valek Filippov
+
+		* VSD: textfield parsing improvements.
+		* VBA: change inflate_vba for XLS.
+		* MDB: more fields in table_def.
+
+2011-10-18  Valek Filippov
+
+		* MDB: added initial support, ported some data from mdbtools.
+
+2011-10-14  Valek Filippov
+
+		* XLS: save/insert/more/less implemented
+
+2011-10-10  Valek Filippov
+
+		* XLS: more records parsing.
+
+2011-10-09  Valek Filippov
+
+		* EMF+: fix saving of modified records.
+
+2011-10-06  Valek Filippov
+
+		* FH: adjust parsing of records based on 64k+ files.
+
+2011-10-01  Valek Filippov
+
+		* FH: saving.
+
+2011-09-31  Valek Filippov
+
+		* XLS: xls.parse didn't return page.type
+
+2011-09-30  Valek Filippov
+
+		* XLS: parse CellXF part of XF record.
+
+2011-09-29  Valek Filippov
+
+		* FH: XForm parsing based on flags
+
+2011-09-27  Valek Filippov
+
+		* FH: More records parsing, rewrite Xform as two parts record.
+		* ?r command with a/u/x subargs.
+
+2011-09-25  Valek Filippov
+
+		* FH: more records parsing.
+
+2011-09-23  Valek Filippov
+
+		* Fix hexdump scrolling.
+		* Improve FH detection.
+
+2011-09-19  Valek Filippov
+
+		* VSD: unstable support for ver 5.
+
+2011-09-18  Valek Filippov
+
+		* FH: show FH8 dictionary.
+
+2011-09-18  Valek Filippov
+
+		* FH: add parsing of v8 dictionary.
+
+2011-09-15  Valek Filippov
+
+		* FH: link to XForm in Rectangle and Oval.
+
+2011-09-11  Valek Filippov
+
+		* FH: Parse coords for Rectangle and Oval, minimal BasicLine parsing.
+		* Add tooltip with FH X/Y for 2 and 4 bytes hexdump selections.
+
+2011-09-10  Valek Filippov
+
+		* Added '?a' and '?u' commands, chop spaces from '?x'.
+		* Improvements in search result display.
+		* CDR: search improvements.
+
+2011-09-09  Valek Filippov
+
+		* CDR: list all args in 'loda'
+
+2011-09-08  Valek Filippov
+
+		* Added '?x' command.
+
+2011-09-07  Valek Filippov
+
+		* Extended Doc.dict to support CDR r.e.
+
+2011-09-06  Alexandre Prokoudine
+
+		* RX2: Committed Frankie Fisher improvements 
+
+2011-09-04  Valek Filippov
+
+		* VSD: Parse TextField.
+		* CDR: Adopted cdr_explorer RIFF parser.
+
+2011-09-01  Valek Filippov
+
+		* FH: More records.
+
+2011-08-31  Valek Filippov
+
+		* FH: Minimal support for Freehand format moved from fhre.
+		* FH: Use dict to update status line
+
+2011-08-29  Alexandre Prokoudine
+
+		* RX2: Committed Frankie Fisher improvements 
+
+2011-08-24  Valek Filippov 
+
+		*RX2: small improvements
+		#RX2: EQ, TRSH, COMP parsing
+
+2011-08-23  Valek Filippov 
+
+		* RX2: moved initial parsing of REX2 from rexpy to oletoy.
+
+2011-08-22  Valek Filippov
+
+		* VBA: "dir" is not always the last one
+		* Try to show more than 3 bytes as utf-16 string
+
+2011-08-21  Valek Filippov
+
+		* Added "esc" command to parse 'Escher' blocks
+		* XLS: Handle nested BOFs; group records by Begin/End brackets
+
+2011-08-20  Valek Filippov
+
+		* Add 'reload' to re-read same file.
+
+2011-08-18  Valek Filippov
+
+		* DOC: saving with screwing VBA modules
+		* XLS: fix FONT, part of XF parsed
+		* inflate.deflate takes 'flavour' to invert tokens meaning
+
+2011-08-15  Valek Filippov
+
+		* OLE: rename oleparse to ole. Start to implement CFB parsing.
+		* Added "command" to entry line, only "$ole" with optional "@offset" is supported atm.
+
+2011-08-14  Valek Filippov
+
+		* VBA: placeholder for ctyping gsf_vba_inflateup
+		* PPT: parse RT_ExternalOleObjectStg
+		* VBA: workaround for compression bug in MSOffice
+		* DOC: initial minimal support for doc
+
+2011-08-13  Valek Filippov
+
+		* VBA: fix module iteration
+		* Add copying hdrow value as address into entry
+		* Remove gsf import from inflate.py
+
+2011-08-12  Valek Filippov
+
+		* Moved libgsf parts to ctypes, no more dependency on python bindings to libgsf.
+		* VBA: [MS-OVBA] seems to be incorrect about CompressedChunkHeader
+		* Add simple +- to entry for address
+		* OLE: Workaround for semi-broken files
+
+2011-08-11  Valek Filippov
+
+		* VBA: fix inflate_vba
+		* VSD: put back names for stencil streams
+		* Added "#" to entry to go to offset at hexdump
+
+2011-08-10  Valek Filippov
+
+		* VBA: decompress all modules
+
+2011-08-09  Valek Filippov
+
+		* VBA: initial parsing of VBA streams (in VSD), compression ported from libgsf, have to be fixed
+
+2011-08-08  Valek Filippov
+
+		* VSD: save all streams, "hdr"/"trailer" parts of 0x5* are ignored for now.
+
+2011-08-07  Valek Filippov
+
+		* VSD: start to implement saving
+		* VSD: add "header" and piece after pointer to trailer
+		* VSD: cheat to parse StencilPG header (only PatternFlags are interesting)
+
+2011-08-06  Valek Filippov
+
+		* XLS: fontname in v8 is utf-16.
+
+2011-08-05  Valek Filippov
+
+		* VSD: reordered text/line/fill styles based on Tibby Lickle report
+		* XLS: group records in BOF/EOF brackets, add substream type
+
+2011-08-03  Valek Filippov
+
+		* XLS: Initial support
+		* XLS: parse Font record
+		* PPT: Initial support
+
+2011-08-02  Valek Filippov
+
+		* EMF: re-pack EMF+ changes back to parent
+		* EMF: 9 more record parsed
+		* Added "utxt" format
+		* Initial support for CLP files, saving of parts into files.
+
+2011-08-01  Valek Filippov
+
+		* MF: gen_tree fix, init EMF+ crafting 
+		* MF: fix saving of EMFs, more EMF+ crafting
+		* MF: EFM+ initial obj crafting
+		* EMF: parse public comment Begin/EndGroup
+
+2011-07-31  Valek Filippov
+
+		* EMF: more EMF+ records parsing
+
+2011-07-30  Valek Filippov
+
+		* EMF: Start to parse EMF+ records.
+		* EMF: Parse EMF+ objects and some records.
+
+2011-07-23  Valek Filippov
+
+		* VSD: Some chunks/streams renaming in Fonts, mark 'Background' pages as 'Page BG',
+			tweek '[Data referenced..] color to not match with default 'selected row' in GtkTree.
+
+2011-07-22  Valek Filippov
+
+		* VSD: Char -- colorID and color
+
+2011-07-20  Valek Filippov
+
+		* VSD: Fill/Line opacity -- "off by one"
+		* VSD: Line cap mapping between VSD and SVG
+
+2011-07-19  Valek Filippov
+
+		* VSD: Add num of chars to ParaIX chunk.
+		* VSD: Naive parsing of 'TextIX' chunk.
+		* VSD: fix blocks parsing for strings in ver 6
+		* VSD: complete Fill/Line parsing for ver 11 (transparency,cap,shadow offsets).
+
+2011-07-16  Valek Filippov
+
+		* VSD: fix version for chunks, tweek 'Char' to not parse ver11 fields in ver6 file
+		* CDR: more 'loda' functions
+
+2011-07-14  Valek Filippov
+
+		* VSD: fix 'Line' blocks.
+		* CDR: 'ftil' 
+
+2011-07-14  Valek Filippov
+
+		* CDR: loda header parsing.
+
+2011-07-13  Valek Filippov
+
+		* CDR: trfd parsing.
+
+2011-07-13  Valek Filippov
+
+		* Initial support for CDR.
+
+2011-07-12  Valek Filippov
+
+		* Parse VSD SplineStart/Knot.
+
+2011-07-11  Valek Filippov
+
+		* Parse FontFace for vsd ver 11.
+
+2011-07-11  Valek Filippov
+
+		* Fix issue with multiparsing of blocks in vsdchunks.
+
+2011-07-09  Valek Filippov
+
+		* Split WMF of emfparse, add more parsing for WMF records.
+
+2011-07-08  Valek Filippov
+
+		* Move 'Add record' from mfview
+		* Change record size +-4 bytes
+		* Move cursor to inserted record
+		* Recalculate size, prevent reducing record <8 bytes
+
+2011-07-07  Valek Filippov
+
+		* Change SVM command names to CamelCase
+		* Fix saving of WMF and EMFs, adding saving of SVMs
+
+2011-07-06  Valek Filippov
+
+		* More block parsing for vsdchunks
+		* Support for different block start offset in v6 and v11.
+		* Unified SVM entries, parsing of some records.
+
+2011-07-04  Valek Filippov
+
+		* Minimal support for Starview Metafiles (based on Inge Wallin/Pierre Ducroquet spec)
+
+2011-07-04  Valek Filippov
+
+		* Minimal support for regular and AP WMFs. Prevent saving for non-WMF files.
+		* Parsing of 'Geometry' flags.
+		* Parse 'Background Page' from 'Page' chunk.
+		* Improved 'Char', added 'Para' and 'TextBlock' parsing.
+
+2011-07-03  Valek Filippov
+
+		* Antieffective compression function for VSD, test.py to play with it.
+		* Initial support for EMF moved from mfview. Some clean-up.
+
+2011-07-01  Valek Filippov
+
+		* Added parsing of children lists in *List chunks
+
+2011-06-24  Valek Filippov
+
+		* Initial parsing of blocks for some chunks
+		* Parsing of 'NURBS Data' for NURBS and Polyline functions
+
+2011-06-23  Valek Filippov
+
+		* Initial parsing of some streams of 0x4x type
+		* Combine and give to oleparse VBA Project stream
+		* Label 0x0a,0x0d,0x1f and 0xd1 streamtypes.
+		* Add ChangeLog

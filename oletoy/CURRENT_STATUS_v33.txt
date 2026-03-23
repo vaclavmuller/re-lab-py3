@@ -1,0 +1,25 @@
+oletoy_py3 v33 stable checkpoint
+
+Current state
+- Python 3 / GTK3 startup is clean except for optional runtime warnings.
+- YEP parser path is usable:
+  - file opens
+  - left tree structure works
+  - right detail panel works
+  - selection highlight updates hex view immediately
+  - numeric editing in detail panel works
+  - status bar no longer crashes on byte/int mismatch
+- publisher1 startup syntax blocker removed
+- qxp startup import blocker removed (lazy import path)
+
+Known remaining runtime warnings
+- Graphviz not found (used only for FreeHand)
+- Usable ICU not found (limited MS locale ID display)
+- Libgsf not found (OLE-based files unavailable until runtime dependency is added)
+- Gtk.UIManager deprecation warnings (non-blocking cleanup item)
+
+Recommended next work order
+1. publisher1 real parser test with sample files
+2. qxp parser cleanup when opening actual QXP files
+3. targeted Py2->Py3 audit in view.py / hv2.py / utils.py / bytes-heavy parsers
+4. optional runtime dependency work (libgsf)
